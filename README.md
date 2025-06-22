@@ -1,13 +1,61 @@
-# Astro with Tailwind
+# Sitio Web del Colegio
 
-```sh
-npm create astro@latest -- --template with-tailwindcss
+Este es el sitio web del colegio construido con Astro, React y Tailwind CSS.
+
+## 🚀 Publicación en GitHub Pages
+
+### Pasos para publicar:
+
+1. **Instalar dependencias:**
+   ```bash
+   npm install
+   ```
+
+2. **Construir el proyecto:**
+   ```bash
+   npm run build
+   ```
+
+3. **Publicar en GitHub Pages:**
+   ```bash
+   npm run deploy
+   ```
+
+### Configuración manual (alternativa):
+
+Si prefieres configurar GitHub Pages manualmente:
+
+1. Ve a tu repositorio en GitHub
+2. Ve a Settings > Pages
+3. En "Source", selecciona "Deploy from a branch"
+4. Selecciona la rama `gh-pages` y la carpeta `/ (root)`
+5. Haz clic en "Save"
+
+### Notas importantes:
+
+- El sitio estará disponible en: `https://sebastian1.github.io/colegio`
+- Asegúrate de que tu repositorio se llame `colegio` para que la URL funcione correctamente
+- Si cambias el nombre del repositorio, actualiza el `base` en `astro.config.mjs`
+
+## 🛠️ Desarrollo
+
+```bash
+# Instalar dependencias
+npm install
+
+# Ejecutar en modo desarrollo
+npm run dev
+
+# Construir para producción
+npm run build
+
+# Previsualizar la construcción
+npm run preview
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/with-tailwindcss)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/with-tailwindcss)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/with-tailwindcss/devcontainer.json)
+## 📁 Estructura del proyecto
 
-Astro comes with [Tailwind](https://tailwindcss.com) support out of the box. This example showcases how to style your Astro project with Tailwind.
-
-For complete setup instructions, please see our [Tailwind Integration Guide](https://docs.astro.build/en/guides/integrations-guide/tailwind).
+- `src/pages/` - Páginas de Astro
+- `src/components/` - Componentes reutilizables
+- `src/layouts/` - Layouts de página
+- `public/` - Archivos estáticos
