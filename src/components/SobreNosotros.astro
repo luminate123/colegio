@@ -1,0 +1,50 @@
+---
+import { Button } from "@/components/ui/button";
+import { Award, Users, Heart, BookOpen } from 'lucide-react';
+---
+
+<section id="nosotros" class="w-full py-12 md:py-24 lg:py-32 lg:px-24 bg-gray-50">
+  <div class="container mx-auto px-4 md:px-6">
+    <div class="grid gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]">
+      <div class="flex flex-col justify-center space-y-4">
+        <div class="space-y-2">
+          <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl text-gray-900">
+            Más de 50 Años Formando Líderes
+          </h2>
+          <p class="max-w-[600px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            Desde 1970, el Colegio Louis Pasteur ha sido pionero en educación de calidad, combinando tradición
+            académica con innovación pedagógica.
+          </p>
+        </div>
+        <div class="grid gap-4 md:grid-cols-2">
+          <div class="flex items-center gap-2">
+            <Award className="h-5 w-5 text-blue-600" />
+            <span class="text-sm font-medium">Excelencia Académica</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <Users className="h-5 w-5 text-blue-600" />
+            <span class="text-sm font-medium">Educación Personalizada</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <Heart className="h-5 w-5 text-blue-600" />
+            <span class="text-sm font-medium">Formación en Valores</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <BookOpen className="h-5 w-5 text-blue-600" />
+            <span class="text-sm font-medium">Innovación Educativa</span>
+          </div>
+        </div>
+        <Button className="w-fit bg-blue-600 hover:bg-blue-700">
+          Conoce Nuestra Historia
+        </Button>
+      </div>
+      <div class="flex items-center justify-center">
+        <img
+          alt="Imagen de la escuela Louis Pasteur"
+          class="aspect-video overflow-hidden rounded-xl object-cover w-full h-[400px]"
+          src="/imagen1.jpg"
+        />
+      </div>
+    </div>
+  </div>
+</section>

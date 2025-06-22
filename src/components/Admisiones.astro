@@ -1,0 +1,67 @@
+---
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Clock } from 'lucide-react';
+---
+
+<section id="admisiones" class="w-full py-12 md:py-24 lg:py-32 bg-blue-50">
+  <div class="container mx-auto px-4 md:px-6">
+    <div class="flex flex-col items-center justify-center space-y-4 text-center">
+      <div class="space-y-2">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl text-gray-900">
+          Proceso de Admisiones 2025
+        </h2>
+        <p class="max-w-[900px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          Te acompañamos paso a paso en el proceso de admisión para que tu hijo forme parte de nuestra familia
+          educativa.
+        </p>
+      </div>
+    </div>
+    <div class="mx-auto max-w-3xl py-12">
+      <div class="grid gap-6 md:grid-cols-2">
+        <Card className="bg-white border-blue-200">
+          <CardHeader>
+            <CardTitle className="text-blue-800">Requisitos</CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-2">
+            <ul class="text-gray-600 space-y-2">
+              <li>• Formulario de inscripción completo</li>
+              <li>• Certificados académicos anteriores</li>
+              <li>• Entrevista con padres y estudiante</li>
+              <li>• Evaluación diagnóstica</li>
+              <li>• Documentos de identidad</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-white border-blue-200">
+          <CardHeader>
+            <CardTitle className="text-blue-800">Fechas Importantes</CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-2">
+            <div class="space-y-3">
+              <div class="flex items-center gap-2">
+                <Clock className="h-4 w-4 text-blue-600" />
+                <span class="text-sm">
+                  <strong>Inscripciones:</strong> Enero - Marzo
+                </span>
+              </div>
+              <div class="flex items-center gap-2">
+                <Clock className="h-4 w-4 text-blue-600" />
+                <span class="text-sm">
+                  <strong>Evaluaciones:</strong> Abril
+                </span>
+              </div>
+              <div class="flex items-center gap-2">
+                <Clock className="h-4 w-4 text-blue-600" />
+                <span class="text-sm">
+                  <strong>Resultados:</strong> Mayo
+                </span>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+  </div>
+</section>

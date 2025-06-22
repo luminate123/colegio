@@ -1,0 +1,74 @@
+---
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Star } from 'lucide-react';
+---
+
+<section class="w-full py-12 md:py-24 lg:py-32">
+  <div class="container mx-auto px-4 md:px-6">
+    <div class="flex flex-col items-center justify-center space-y-4 text-center">
+      <div class="space-y-2">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl text-gray-900">
+          Lo Que Dicen Nuestras Familias
+        </h2>
+        <p class="max-w-[900px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          La confianza de padres y estudiantes es nuestro mayor logro.
+        </p>
+      </div>
+    </div>
+    <div class="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3 lg:gap-8">
+      <Card className="border-blue-100">
+        <CardHeader>
+          <div class="flex items-center gap-1">
+            {Array.from({ length: 5 }).map((_, i) => (
+              <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+            ))}
+          </div>
+          <CardTitle className="text-lg">María González</CardTitle>
+          <CardDescription>Madre de familia</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <p class="text-gray-600">
+            "El colegio ha sido fundamental en el desarrollo de mi hija. Los maestros son excepcionales y el
+            ambiente es muy acogedor."
+          </p>
+        </CardContent>
+      </Card>
+
+      <Card className="border-blue-100">
+        <CardHeader>
+          <div class="flex items-center gap-1">
+            {Array.from({ length: 5 }).map((_, i) => (
+              <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+            ))}
+          </div>
+          <CardTitle className="text-lg">Carlos Mendoza</CardTitle>
+          <CardDescription>Padre de familia</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <p class="text-gray-600">
+            "La formación integral que recibe mi hijo aquí es incomparable. No solo aprende académicamente, sino
+            que desarrolla valores sólidos."
+          </p>
+        </CardContent>
+      </Card>
+
+      <Card className="border-blue-100">
+        <CardHeader>
+          <div class="flex items-center gap-1">
+            {Array.from({ length: 5 }).map((_, i) => (
+              <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+            ))}
+          </div>
+          <CardTitle className="text-lg">Ana Rodríguez</CardTitle>
+          <CardDescription>Egresada 2023</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <p class="text-gray-600">
+            "Gracias al colegio pude ingresar a la universidad de mis sueños. La preparación académica y
+            personal que recibí fue excepcional."
+          </p>
+        </CardContent>
+      </Card>
+    </div>
+  </div>
+</section>

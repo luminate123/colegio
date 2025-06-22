@@ -1,0 +1,60 @@
+---
+import { Button } from "@/components/ui/button";
+import { Award, Users } from "lucide-react";
+---
+
+<section
+    id="inicio"
+    class="w-full py-12  md:py-24 lg:py-32 lg:px-24 bg-gradient-to-r from-blue-50 to-blue -50"
+>
+    <div class="container mx-auto px-4 md:px-6">
+        <div
+            class="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]"
+        >
+            <div class="flex flex-col justify-center space-y-4">
+                <div class="space-y-2">
+                    <h1
+                        class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none text-gray-900"
+                    >
+                        Educación de Excelencia para el Futuro
+                    </h1>
+                    <p class="max-w-[600px] text-gray-600 md:text-xl">
+                        En el Colegio Louis Pasteur formamos líderes íntegros con
+                        valores sólidos, preparándolos para los desafíos del
+                        mañana con una educación personalizada y de calidad.
+                    </p>
+                </div>
+                <div class="flex flex-col gap-2 min-[400px]:flex-row">
+                    <Button
+                        className="bg-blue-600 hover:bg-blue-700 text-white"
+                    >
+                        Solicitar Información
+                    </Button>
+                    <Button
+                        variant="outline"
+                        className="border-blue-600 text-blue-600 hover:bg-green-50"
+                    >
+                        Agendar Visita
+                    </Button>
+                </div>
+                <div class="flex items-center gap-4 text-sm text-gray-600">
+                    <div class="flex items-center gap-1">
+                        <Award className="h-4 w-4 text-blue-600" />
+                        <span>Acreditación Nacional</span>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <Users className="h-4 w-4 text-blue-600" />
+                        <span>Más de 1,000 estudiantes</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center justify-center">
+                <img
+                    alt="Estudiantes del Colegio Louis Pasteur"
+                    class="aspect-video overflow-hidden rounded-xl object-cover w-full h-[400px]"
+                    src="educacion3.jpg"
+                />
+            </div>
+        </div>
+    </div>
+</section>

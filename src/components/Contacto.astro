@@ -1,0 +1,90 @@
+---
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Button } from "@/components/ui/button";
+import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+---
+
+<section id="contacto" class="w-full py-12 md:py-24 lg:py-32">
+  <div class="container mx-auto px-4 md:px-6">
+    <div class="flex flex-col items-center justify-center space-y-4 text-center">
+      <div class="space-y-2">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl text-gray-900">Contáctanos</h2>
+        <p class="max-w-[900px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          Estamos aquí para resolver todas tus dudas y acompañarte en el proceso educativo de tu hijo.
+        </p>
+      </div>
+    </div>
+    <div class="mx-auto grid max-w-5xl items-start gap-6 py-12 lg:grid-cols-2 lg:gap-12">
+      <div class="space-y-6">
+        <div class="space-y-4">
+          <h3 class="text-xl font-bold text-gray-900">Información de Contacto</h3>
+          <div class="space-y-3">
+            <div class="flex items-center gap-3">
+              <MapPin className="h-5 w-5 text-blue-600" />
+              <span class="text-gray-600">Av. Principal 123, Colonia Centro, Ciudad, CP 12345</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <Phone className="h-5 w-5 text-blue-600" />
+              <span class="text-gray-600">+52 (55) 1234-5678</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <Mail className="h-5 w-5 text-blue-600" />
+              <span class="text-gray-600">info@colegiosanmartin.edu.mx</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <Clock className="h-5 w-5 text-blue-600" />
+              <span class="text-gray-600">Lun - Vie: 7:00 AM - 6:00 PM</span>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-4">
+          <h3 class="text-xl font-bold text-gray-900">Horarios de Atención</h3>
+          <div class="space-y-2 text-gray-600">
+            <p>
+              <strong>Oficina de Admisiones:</strong> Lun - Vie 8:00 AM - 4:00 PM
+            </p>
+            <p>
+              <strong>Dirección Académica:</strong> Lun - Vie 7:30 AM - 3:30 PM
+            </p>
+            <p>
+              <strong>Servicios Generales:</strong> Lun - Vie 7:00 AM - 6:00 PM
+            </p>
+          </div>
+        </div>
+      </div>
+      <Card className="border-blue-200">
+        <CardHeader>
+          <CardTitle className="text-blue-800">Envíanos un Mensaje</CardTitle>
+          <CardDescription>Completa el formulario y nos pondremos en contacto contigo pronto.</CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <div class="grid gap-4 md:grid-cols-2">
+            <div class="space-y-2">
+              <label class="text-sm font-medium text-gray-700">Nombre</label>
+              <Input placeholder="Tu nombre completo" />
+            </div>
+            <div class="space-y-2">
+              <label class="text-sm font-medium text-gray-700">Teléfono</label>
+              <Input placeholder="Tu número de teléfono" />
+            </div>
+          </div>
+          <div class="space-y-2">
+            <label class="text-sm font-medium text-gray-700">Email</label>
+            <Input type="email" placeholder="tu@email.com" />
+          </div>
+          <div class="space-y-2">
+            <label class="text-sm font-medium text-gray-700">Asunto</label>
+            <Input placeholder="¿En qué podemos ayudarte?" />
+          </div>
+          <div class="space-y-2">
+            <label class="text-sm font-medium text-gray-700">Mensaje</label>
+            <Textarea placeholder="Cuéntanos más detalles sobre tu consulta..." className="min-h-[100px]" />
+          </div>
+          <Button className="w-full bg-blue-600 hover:bg-blue-700">Enviar Mensaje</Button>
+        </CardContent>
+      </Card>
+    </div>
+  </div>
+</section>

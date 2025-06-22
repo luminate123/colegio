@@ -1,0 +1,128 @@
+---
+import "../styles/global.css";
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="description"
+			content="Colegio Louis Pasteur - Educación de excelencia desde inicial hasta preuniversitario"
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/logo.png" />
+		<title>{title}</title>
+	</head>
+	<body class="min-h-screen bg-white">
+		<!-- Header -->
+		<header
+			class="px-4 lg:px-6 h-16 flex items-center border-b bg-white sticky top-0 z-50"
+		>
+			<a class="flex items-center justify-center" href="#inicio">
+				<img
+					src="/logo.png"
+					alt="Logo del Colegio Louis Pasteur"
+					class="h-12 w-10"
+				/>
+				<span class="ml-2 text-xl font-bold text-gray-900"
+					>Colegio Louis Pasteur</span
+				>
+			</a>
+			<nav class="ml-auto hidden md:flex gap-6">
+				<a
+					class="text-sm font-medium hover:text-blue-600 transition-colors"
+					href="#inicio">Inicio</a
+				>
+				<a
+					class="text-sm font-medium hover:text-blue-600 transition-colors"
+					href="#programas">Programas</a
+				>
+				<a
+					class="text-sm font-medium hover:text-blue-600 transition-colors"
+					href="#nosotros">Nosotros</a
+				>
+				<a
+					class="text-sm font-medium hover:text-blue-600 transition-colors"
+					href="#calendario">Calendario</a
+				>
+				<a
+					class="text-sm font-medium hover:text-blue-600 transition-colors"
+					href="#admisiones">Admisiones</a
+				>
+				<a
+					class="text-sm font-medium hover:text-blue-600 transition-colors"
+					href="#contacto">Contacto</a
+				>
+			</nav>
+			<button class="ml-4 md:hidden p-2 border rounded">
+				<svg
+					class="h-4 w-4"
+					fill="none"
+					stroke="currentColor"
+					viewBox="0 0 24 24"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="M4 6h16M4 12h16M4 18h16"></path>
+				</svg>
+			</button>
+		</header>
+
+		<main class="flex-1">
+			<slot />
+		</main>
+
+		<!-- Footer -->
+		<footer
+			class="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-gray-50"
+		>
+			<div class="flex items-center gap-2">
+				<svg
+					class="h-8 w-8 text-blue-600"
+					fill="none"
+					stroke="currentColor"
+					viewBox="0 0 24 24"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="M12 14l9-5-9-5-9 5 9 5z"></path>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+					></path>
+				</svg>
+				<span class="text-sm font-medium text-gray-900"
+					>Colegio Louis Pasteur</span
+				>
+			</div>
+			<p class="text-xs text-gray-500 sm:ml-4">
+				© 2025 Colegio Louis Pasteur. Todos los derechos reservados.
+			</p>
+			<nav class="sm:ml-auto flex gap-4 sm:gap-6">
+				<a
+					class="text-xs hover:underline underline-offset-4 text-gray-500"
+					href="#">Política de Privacidad</a
+				>
+				<a
+					class="text-xs hover:underline underline-offset-4 text-gray-500"
+					href="#">Términos de Servicio</a
+				>
+				<a
+					class="text-xs hover:underline underline-offset-4 text-gray-500"
+					href="#">Aviso Legal</a
+				>
+			</nav>
+		</footer>
+	</body>
+</html>

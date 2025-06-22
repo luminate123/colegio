@@ -1,0 +1,105 @@
+---
+import {
+    Card,
+    CardContent,
+    CardDescription,
+    CardHeader,
+    CardTitle,
+} from "@/components/ui/card";
+import { Heart, BookOpen, GraduationCap } from "lucide-react";
+---
+
+<section id="programas" class="w-full py-12 md:py-24 lg:py-32">
+    <div class="container mx-auto px-4 md:px-6">
+        <div
+            class="flex flex-col items-center justify-center space-y-4 text-center"
+        >
+            <div class="space-y-2">
+                <h2
+                    class="text-3xl font-bold tracking-tighter sm:text-5xl text-gray-900"
+                >
+                    Nuestros Programas Educativos
+                </h2>
+                <p
+                    class="max-w-[900px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+                >
+                    Ofrecemos una educación integral desde preescolar hasta
+                    bachillerato, con programas especializados que potencian el
+                    talento de cada estudiante.
+                </p>
+            </div>
+        </div>
+        <div
+            class="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3 lg:gap-8"
+        >
+            <Card className="border-blue-100 hover:shadow-lg transition-shadow">
+                <CardHeader className="text-center">
+                    <div
+                        class="mx-auto w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4"
+                    >
+                        <Heart className="h-6 w-6 text-blue-600" />
+                    </div>
+                    <CardTitle className="text-blue-800">Incial</CardTitle>
+                    <CardDescription>3 a 5 años</CardDescription>
+                </CardHeader>
+                <CardContent className="text-center space-y-2">
+                    <p class="text-gray-600">
+                        Desarrollo integral a través del juego, creatividad y
+                        primeras experiencias de aprendizaje.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Estimulación temprana</li>
+                        <li>• Desarrollo psicomotor</li>
+                        <li>• Iniciación a la lectoescritura</li>
+                    </ul>
+                </CardContent>
+            </Card>
+
+            <Card className="border-blue-100 hover:shadow-lg transition-shadow">
+                <CardHeader className="text-center">
+                    <div
+                        class="mx-auto w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4"
+                    >
+                        <BookOpen className="h-6 w-6 text-blue-600" />
+                    </div>
+                    <CardTitle className="text-blue-800">Primaria</CardTitle>
+                    <CardDescription>6 a 11 años</CardDescription>
+                </CardHeader>
+                <CardContent className="text-center space-y-2">
+                    <p class="text-gray-600">
+                        Formación académica sólida con énfasis en valores,
+                        pensamiento crítico y habilidades sociales.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Metodología activa</li>
+                        <li>• Inglés intensivo</li>
+                        <li>• Tecnología educativa</li>
+                    </ul>
+                </CardContent>
+            </Card>
+
+            <Card className="border-blue-100 hover:shadow-lg transition-shadow">
+                <CardHeader className="text-center">
+                    <div
+                        class="mx-auto w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4"
+                    >
+                        <GraduationCap className="h-6 w-6 text-blue-600" />
+                    </div>
+                    <CardTitle className="text-blue-800">Secundaria / Preuniversitario</CardTitle>
+                    <CardDescription>12 a 17 años</CardDescription>
+                </CardHeader>
+                <CardContent className="text-center space-y-2">
+                    <p class="text-gray-600">
+                        Preparación universitaria con orientación vocacional y
+                        desarrollo de liderazgo.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Docentes preuniversitarios</li>
+                        <li>• Orientación universitaria</li>
+                        <li>• Proyectos de investigación</li>
+                    </ul>
+                </CardContent>
+            </Card>
+        </div>
+    </div>
+</section>
